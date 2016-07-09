@@ -99,50 +99,15 @@ public class HangmanTest {
     }
 
     @Test
-    public void show_status_when_guess_a_char() {
+    public void should_return_false_given_apple_when_guess_r() {
         Hangman hangman = new Hangman("apple");
 
-        hangman.guessAChar('p');
-
-        hangman.showStatus();
-    }
-
-    @Test
-    public void show_answeer_when_guess_right_the_word() {
-        Hangman hangman = new Hangman("apple");
-
-        hangman.guessAChar('p');
-        hangman.showStatus();
-        hangman.guessAChar('l');
-        hangman.showStatus();
-
-        if (hangman.chenkAnswer())
-            System.out.println("YOU WIN !!! GAME OVER");
-        else
-            System.out.println("YOU LOSE !!! GAME OVER");
-    }
-
-    @Test
-    public void show_answer_when_guess_wrong_the_word() {
-        Hangman hangman = new Hangman("apple");
-
-        hangman.guessAChar('p');
-        hangman.showStatus();
-        hangman.guessAChar('q');
-        hangman.showStatus();
-        hangman.guessAChar('w');
-        hangman.showStatus();
         hangman.guessAChar('r');
-        hangman.showStatus();
-        hangman.guessAChar('t');
-        hangman.showStatus();
-        hangman.guessAChar('y');
-        hangman.showStatus();
 
-        if (hangman.chenkAnswer())
-            System.out.println("YOU WIN !!! GAME OVER");
-        else
-            System.out.println("YOU LOSE !!! GAME OVER");
+        assertThat(hangman.times, is(5));
+        assertThat(hangman.guessedStr, is("iaouer"));
+        assertThat(hangman.displayedStr, is("a___e"));
+        assertThat(hangman.chenkAnswer(), is(false));
     }
 
 }

@@ -46,11 +46,5 @@ public class Hangman {
         return (checkTimes() && str.equals(displayedStr));
     }
 
-    public void showStatus() {
-        System.out.println("剩余次数：" + times);
-        System.out.println("现在的猜出的字符所组成的单词：" + displayedStr);
-        System.out.println("请继续！！！");
-    }
-
 
 }
