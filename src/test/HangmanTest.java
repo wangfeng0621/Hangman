@@ -1,8 +1,10 @@
+package test;
 
+import main.Hangman;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by feng on 2016/7/2.
