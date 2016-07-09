@@ -1,4 +1,4 @@
-package main;
+package main.com.fengguang;
 
 /**
  * Created by feng on 2016/7/2.

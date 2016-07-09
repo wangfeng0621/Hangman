@@ -2,4 +2,5 @@ language: java
 jdk:
   - oraclejdk7
 script:
-  - gradle clean test
+  - ./gradlew -v
+  - ./gradlew clean test

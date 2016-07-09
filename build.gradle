@@ -15,5 +15,5 @@ dependencies {
 
 
 test{
-    include '**/test.HangmanTest*'
+    include '**/HangmanTest*'
 }

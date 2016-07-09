@@ -1,6 +1,6 @@
-package test;
+package test.com.fengguang;
 
-import main.Hangman;
+import main.com.fengguang.Hangman;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

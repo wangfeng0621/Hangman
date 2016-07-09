@@ -3,5 +3,4 @@
 out/
 gradle
 .gradle
-settings.gradle
 build
